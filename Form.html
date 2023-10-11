@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+
+    <style>
+        fieldset {
+            background-color: rgb(232, 139, 73);
+            color: rgb(101, 0, 72);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-variant: small-caps;
+        }
+        
+        fieldset::first-line {
+            color: rgb(0, 45, 192);
+            font-size: 20px;
+            font-style: oblique;
+            font-family: Verdana, Geneva, Tahoma, sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        
+        a:hover {
+            border: 2px solid red;
+            background-color: rgb(244, 255, 85);
+        }
+        
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        fieldset {
+            border-color: rgb(0, 0, 0);
+            border-radius: 12%;
+            border-width: 2px;
+        }
+        
+        legend {
+            font-weight: 800;
+            font-variant: small-caps;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <form action="">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+
+            <label for="name">First NAME</label>
+            <input type="text" required placeholder="FirstNAME" id="firstname" name="firstname">
+            <br>
+            <br>
+            <label for="name">Last NAME</label>
+            <input type="text" required placeholder="LastNAME" id="lastname" name="lastname">
+            <br>
+            <br>
+            <label for="email">email</label>
+            <input type="email" required placeholder="ex:name@gmail.com" id="email" name="email">
+            <br>
+            <br>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Educational details</legend>
+            <label for="dept">DEPARTMENT</label>
+            <br>
+            <input type="radio" id="cs" name="dept">
+            <label for="cs">CS</label>
+            <br>
+            <input type="radio" id="Mech" name="dept">
+            <label for="Mech">Mech</label>
+            <br>
+            <input type="radio" id="Civil" name="dept">
+            <label for="Civil">CIVIL</label>
+            <br>
+            <label for="yog">Year of Graduation</label>
+            <br>
+            <input list="yog" id="yop" name="yop">
+            <datalist id="yog">
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+           </datalist>
+            <br>
+            <br>
+            <label for="sk">SKILLS</label>
+            <br>
+            <input type="checkbox" id="html" name="html">
+            <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" id="css" name="css">
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" id="Js" name="javascript">
+            <label for="javascript">JAVASCRIPT</label>
+            <br>
+
+        </fieldset>
+
+        <br>
+        <a href="cont.html"> submit
+        
+</body>
+
+</html>
